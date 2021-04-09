@@ -1,0 +1,29 @@
+ /* Propiedades de la caja del cuerpo */
+ body {
+    padding: 5px;  /* relleno */
+    margin: 10px;  /* Margen */
+    border: solid;
+    border-color: whitesmoke;
+  }
+  /*  Propiedades de la caja del párrafo */
+ fotoprincipal {
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
+   /*  Propiedades del h1 */
+   h1 {
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
+  
+  /*  Propiedades del div */
+  div {
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
