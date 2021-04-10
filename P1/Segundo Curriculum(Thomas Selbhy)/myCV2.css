@@ -1,0 +1,58 @@
+ /* Propiedades de la caja del cuerpo */
+ body {
+    padding: 5px;  /* relleno */
+    margin: 10px;  /* Margen */
+    border: solid;
+    border-color: black;
+  }
+  /*  Propiedades solo para la imgen con id foto principal*/
+ #fotocollage {
+  margin: 4 px;
+  padding: 0 px; /* Relleno */
+  border: solid;
+  border-color: black;
+}
+  /*  Propiedades solo para la imgen con id foto principal*/
+ #fotoprincipal {
+    margin: 0 px;
+    padding: 0 px; /* Relleno */
+    border:solid;
+    border-color: black;
+  }
+
+   /*  Propiedades del h1 */
+   #h {
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: black;
+  }
+  
+  /*  Propiedades del div */
+  #principales {
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: black;
+  }
+  #principales1 {
+    background: goldenrod;
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
+  #tablas {
+    background: gray;
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
+  #enunciadosT {
+    background: rgb(76, 76, 75);
+    margin: 10px;
+    padding: 10px; /* Relleno */
+    border:solid;
+    border-color: whitesmoke;
+  }
