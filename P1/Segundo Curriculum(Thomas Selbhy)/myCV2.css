@@ -1,3 +1,9 @@
+#gif {
+  height: 200px;
+  width: 150px;
+  border: solid;
+  border-color: black;
+}
  /*Propiedades de la letra*/
  #Letra {
   font-size: 20px;
