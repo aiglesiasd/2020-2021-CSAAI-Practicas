@@ -1,0 +1,18 @@
+/* Estilo del canvas
+  Lo bordeamos con una línea negra y le damos fondo
+  azul para distinguirlo
+*/
+
+canvas {
+    background-color: rgb(38, 212, 14);
+    border-style: unset;
+    border-width: 1px;
+    border-color: rgb(15, 15, 202);
+    border-radius: 5px;
+  }
+  /* Imagen deshabilitada
+   Se usa para leerla desde js y
+   meterla en el canvas */
+   #imagen33 {
+    display: none;
+  
