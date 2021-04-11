@@ -10,9 +10,9 @@
     border-color: black;
   }
   /*  Propiedades solo para la imgen con id foto principal*/
- #fotocollage {
-  margin: 4 px;
-  padding: 0 px; /* Relleno */
+ #imagenESA {
+  height: 150px;
+  width: 150px;
   border: solid;
   border-color: black;
 }
