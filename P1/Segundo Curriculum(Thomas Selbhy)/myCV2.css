@@ -1,4 +1,8 @@
- /* Propiedades de la caja del cuerpo */
+ /*Propiedades de la letra*/
+ #Letra {
+  font-size: 20px;
+  
+}/* Propiedades de la caja del cuerpo */
  body {
     padding: 5px;  /* relleno */
     margin: 10px;  /* Margen */
@@ -22,6 +26,7 @@
 
    /*  Propiedades del h1 */
    #h {
+    font-size: 20px;
     margin: 10px;
     padding: 10px; /* Relleno */
     border:solid;
