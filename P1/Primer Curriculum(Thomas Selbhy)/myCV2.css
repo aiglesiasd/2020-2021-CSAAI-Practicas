@@ -15,6 +15,12 @@
     border: solid;
     border-color: black;
   }
+  #mapa {
+    height: 450px;
+    width: 1300px;
+    /* border: solid; */
+    /*border-color: black;*/
+  }
   /*  Propiedades solo para la imgen con id foto principal*/
  #imagenESA {
   height: 130px;
