@@ -1,13 +1,27 @@
+.izquierda{
+float: left;
+width: 25%;
+background-color: rgba(122, 226, 145, 0.6);
+border-color: honeydew;
+border-style: solid;
+}
+.derecha{
+  float:left;
+  width: 75%;
+  background-color: rgba(122, 226, 145, 0.6);
+  border-color: honeydew;
+  border-style: solid;
+  
+}
+
+*{
+box-sizing: border-box;
+}
 #masgrande {
   font-size: 20px;
 }
-/* Propiedades de la caja del cuerpo */
- body {
-    padding: 5px;  /* relleno */
-    margin: 10px;  /* Margen */
-    border: solid;
-    border-color: whitesmoke;
-  }
+
+ 
   /*  Propiedades solo para la imgen con id foto principal*/
  #fotocollage {
   height: 250px;
@@ -37,6 +51,7 @@
   
   /*  Propiedades del div */
   #principales {
+    background-color: rgba(52, 131, 69, 0.6);
     margin: 10px;
     padding: 10px; /* Relleno */
     border:solid;
