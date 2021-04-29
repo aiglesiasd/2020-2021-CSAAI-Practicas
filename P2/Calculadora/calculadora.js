@@ -31,6 +31,6 @@ DEL.onclick = () => {
     display.innerHTML = display.innerHTML.slice(0,-1)
   }
 igual.onclick= () => {
-    if(estado=ESTADO.OP1 || estado=ESTADO.INIT || estado=ESTADO.OP2)
+    if(estado==ESTADO.OP1 || estado==ESTADO.INIT || estado==ESTADO.OP2)
     display.innerHTML = eval(display.innerHTML);
 }
