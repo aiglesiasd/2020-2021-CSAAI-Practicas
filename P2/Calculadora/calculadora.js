@@ -1,15 +1,11 @@
 console.log("Ejecutando JS...");
 const gui={
-display: document.getElementById("display"),
-igual : document.getElementById("igual"),
-ac : document.getElementById("ac"), //el AC es borrar todo
-del : document.getElementById("del"), //el DEL es borrar un numero
+        display: document.getElementById("display"),
+        igual : document.getElementById("igual"),
+        ac : document.getElementById("ac"), //el AC es borrar todo
+        del : document.getElementById("del"), //el DEL es borrar un numero
 }
-//creamos un array apartir de la clase botones especificada en el html
-let boton = document.getElementsByClassName("botones");
 
-//creamos un array apartir de la clase opera especificada en el html
-let operacion = document.getElementsByClassName("operacion");
 
 //-- Estados de la calculadora
 const ESTADO = {
@@ -21,6 +17,9 @@ const ESTADO = {
 //Empezamos en el estado inicial de nuestra maquina de estados
 let estado = ESTADO.INIT;  
 
+//creamos un array apartir de la clase botones especificada en el html
+let boton = document.getElementsByClassName("botones");
+
 //hacemos nuestro bucle para los botones
 for(i=0; i<boton.length; i++){
     boton[i].onclick=(ev)=>{
@@ -28,6 +27,9 @@ for(i=0; i<boton.length; i++){
     
     }
 }
+//creamos un array apartir de la clase opera especificada en el html
+let operacion = document.getElementsByClassName("operacion");
+
 //hacemos nuestro bucle para los operadores
 for(i=0; i<operacion.length; i++){
     operacion[i].onclick=(ev)=>{
