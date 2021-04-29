@@ -1,10 +1,10 @@
 console.log("Ejecutando JS...");
-
-display = document.getElementById("display");
-igual = document.getElementById("igual");
-ac = document.getElementById("ac"); //el AC es borrar todo
-del = document.getElementById("del"); //el DEL es borrar un numero
-
+const gui={
+display: document.getElementById("display"),
+igual : document.getElementById("igual"),
+ac : document.getElementById("ac"), //el AC es borrar todo
+del : document.getElementById("del"), //el DEL es borrar un numero
+}
 //creamos un array apartir de la clase botones especificada en el html
 let boton = document.getElementsByClassName("botones");
 
