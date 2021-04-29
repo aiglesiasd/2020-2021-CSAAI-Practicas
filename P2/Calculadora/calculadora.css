@@ -1,4 +1,46 @@
 .botones{
-column-count: 4;
+column-count: 3;
 margin-top: 20px;
+}
+.operacion{
+    column-count: 1;
+    margin-top: 20px;
+    }
+#parentesisL{
+    column-count: 1;
+    margin-top: 20px;
+    
+
+}
+#parentesisR{
+    column-count: 1;
+    margin-top: 20px;
+    
+
+}
+#pi{
+    column-count: 1;
+    margin-top: 20px;
+    
+
+}
+#ac{
+    column-count: 1;
+    margin-top: 20px;
+}
+#del{
+column-count: 1;
+    margin-top: 20px;
+}
+.primero{
+    padding: 10px;
+}
+.segundo{
+    padding: 10px;
+}
+.tercero{
+    padding: 10px;
+}
+.cuarto{
+    padding: 10px;
 }
