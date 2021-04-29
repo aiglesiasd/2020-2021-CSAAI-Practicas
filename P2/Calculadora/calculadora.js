@@ -1,9 +1,10 @@
 console.log("Ejecutando JS...");
 
-display = document.getElementById("display")
-suma = document.getElementById("suma")
-igual = document.getElementById("igual")
-clear = document.getElementById("clear")
+display = document.getElementById("display");
+suma = document.getElementById("suma");
+igual = document.getElementById("igual");
+AC = document.getElementById("AC"); //el AC es borrar todo
+DEL = document.getElementById("DEL"); //el DEL es borrar un numeross
 
 let botones =document.getElementById("boton");
 let operaciones =document.getElementById("operaciones");
