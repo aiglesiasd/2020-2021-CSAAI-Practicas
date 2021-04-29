@@ -6,8 +6,8 @@ igual = document.getElementById("igual");
 AC = document.getElementById("AC"); //el AC es borrar todo
 DEL = document.getElementById("DEL"); //el DEL es borrar un numeross
 
-let botones =document.getElementById("boton");
-let operaciones =document.getElementById("operaciones");
+let botones = document.getElementById("boton");
+let operaciones = document.getElementById("operaciones");
 //-- Estados de la calculadora
 const ESTADO = {
     INIT: 0,
@@ -30,3 +30,7 @@ AC.onclick = () => {
 DEL.onclick = () => {
     display.innerHTML = display.innerHTML.slice(0,-1)
   }
+igual.onclick= () => {
+    if(estado=ESTADO.OP1 || estado=ESTADO.INIT || estado=ESTADO.OP2)
+    display.innerHTML = eval(display.innerHTML);
+}
