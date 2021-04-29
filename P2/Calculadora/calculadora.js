@@ -16,6 +16,9 @@ const ESTADO = {
     OPERATION: 2,
     OP2: 3
 }
+//Empezamos en el estado inicial de nuestra maquina de estados
+let estado = ESTADO.INIT;  
+
 //hacemos nuestro bucle para los botones
 for(i=0;i<boton.length;i++){
     boton[i].onclick=(ev)=>{
@@ -29,9 +32,6 @@ for(i=0;i<operacion.length;i++){
         operaciones(ev.target.value)    
     }
 }
- 
-//Empezamos en el estado inicial de nuestra maquina de estados
-let estado = ESTADO.INIT;   
 
 //actualizamos nuestro display a cero cuando clickeamos el boton AC...
 //.. y volvemos al estado inicial(INIT)
