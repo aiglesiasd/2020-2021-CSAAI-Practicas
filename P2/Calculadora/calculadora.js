@@ -26,3 +26,7 @@ AC.onclick = () => {
   display.innerHTML = "0";
   estado = ESTADO.INIT;
 }
+//cuando clickeamos el boton DEl, actualizamos el display y borramos un numero
+DEL.onclick = () => {
+    display.innerHTML = display.innerHTML.slice(0,-1)
+  }
