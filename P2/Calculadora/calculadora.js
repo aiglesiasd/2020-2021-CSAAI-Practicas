@@ -4,7 +4,7 @@ display :document.getElementById("display"),
 suma :document.getElementById("suma"),
 igual :document.getElementById("igual"),
 AC :document.getElementById("AC"), //el AC es borrar todo
-DEL :document.getElementById("DEL"), //el DEL es borrar un numeross
+DEL :document.getElementById("DEL"), //el DEL es borrar un numero
 }
 
 
