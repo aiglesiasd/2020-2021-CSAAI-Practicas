@@ -1,10 +1,10 @@
 console.log("Ejecutando JS...");
-const gui={
-        display: document.getElementById("display"),
-        igual : document.getElementById("igual"),
-        ac : document.getElementById("ac"), //el AC es borrar todo
-        del : document.getElementById("del"), //el DEL es borrar un numero
-}
+
+display= document.getElementById("display");
+igual = document.getElementById("igual");
+ac = document.getElementById("ac"); //el AC es borrar todo
+del = document.getElementById("del"); //el DEL es borrar un numero
+
 
 
 //-- Estados de la calculadora
