@@ -18,7 +18,7 @@ const ESTADO = {
 //Empezamos en el estado inicial de nuestra maquina de estados
 let estado = ESTADO.INIT;  
 
-
+//creamos un array apartir de la clase botones especificada en el html
 let boton = document.getElementsByClassName("botones");
 
 //hacemos nuestro bucle para los botones
@@ -28,7 +28,7 @@ for(i=0;i<boton.length;i++){
     
     }
 }
-
+//creamos un array apartir de la clase operaciones especificada en el html
 let operacion = document.getElementByClassName("operaciones");
 
 //hacemos nuestro bucle para los operadores
