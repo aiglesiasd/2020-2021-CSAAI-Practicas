@@ -9,7 +9,7 @@ del = document.getElementById("del"); //el DEL es borrar un numero
 let boton = document.getElementsByClassName("botones");
 
 //creamos un array apartir de la clase opera especificada en el html
-let operacion = document.getElementByClassName("operacion");
+let operacion = document.getElementsByClassName("operacion");
 
 //-- Estados de la calculadora
 const ESTADO = {
@@ -47,7 +47,7 @@ function numero(n){
         estado = ESTADO.OP2;
     }else if (estado == ESTADO.OP2){
         display.innerHTML += n;
-}
+    }
 }
 function opera(o){
     if(estado != ESTADO.OPERATION){
@@ -58,16 +58,16 @@ function opera(o){
 //actualizamos nuestro display a cero cuando clickeamos el boton AC...
 //.. y volvemos al estado inicial(INIT)
 ac.onclick = () => {
-  display.innerHTML = "0";
+  display.innerHTML = 0;
   estado = ESTADO.INIT;
 }
 //cuando clickeamos el boton DEl, actualizamos el display y borramos un numero
 del.onclick = () => {
-    display.innerHTML = display.innerHTML.slice(0,-1);
+    display.innerHTML = display.innerHTML.slice(0, -1);
   }
 igual.onclick = () => {
-    if(estado == ESTADO.OP1  || estado == ESTADO.OP2){
+    if (estado == ESTADO.OP1  || estado == ESTADO.OP2) {
     display.innerHTML = eval(display.innerHTML);
-    estado == ESTADO.OP1;
+    estado = ESTADO.OP1;
 }
 }
