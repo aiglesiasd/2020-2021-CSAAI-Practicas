@@ -10,10 +10,10 @@ font-size: 25px;
 text-align: center;
 }
 #display{
-  width: 245px;
+  width: 370px;
   height: 45px;
   background-color:gray;
-  margin-left: 20px;
+  margin-left: 470px;
   margin-right: 15px;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -22,7 +22,7 @@ text-align: center;
   font-family: Courier New;
   padding: 10px;
   overflow: hidden;
-    
+ text-align: center;
 }
 .operacion{
     column-count: 1;
@@ -52,20 +52,55 @@ text-align: center;
 #pi{
     column-count: 1;
     margin-top: 20px;
-    
+    width: 60px;
+    height: 60px;
+    column-count: 3;
+    margin-top: 20px;
+    border-color: black;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    text-align: center;
 
 }
 #ac{
     column-count: 1;
     margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    column-count: 3;
+    margin-top: 20px;
+    border-color: rgb(145, 7, 7);
+    color: white;
+    background-color: rgb(145, 7, 7);
+    font-size: 25px;
+    text-align: center;
 }
 #del{
-column-count: 1;
+    column-count: 1;
     margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    column-count: 3;
+    margin-top: 20px;
+    border-color: rgb(145, 7, 7);;
+    color: white;
+    background-color:  rgb(145, 7, 7);;
+    font-size: 25px;
+    text-align: center;
 }
 #igual{
     column-count: 1;
     margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    column-count: 3;
+    margin-top: 20px;
+    border-color: rgb(0, 0, 0);
+    color: white;
+    background-color:  rgb(0, 0, 0);;
+    font-size: 25px;
+    text-align: center;
 }
 .primero{
     padding: 10px;
@@ -82,4 +117,5 @@ column-count: 1;
 #TODO{
     color: white;
     background: black;
+    text-align:center;
 }
