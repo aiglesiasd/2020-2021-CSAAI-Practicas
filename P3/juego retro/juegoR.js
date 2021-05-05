@@ -9,13 +9,22 @@ canvas.height = 500;
 //-- Obtener el contexto del canvas
 const ctx = canvas.getContext("2d");
 
-//-- Coordenadas del objeto
+//-- Coordenadas del objeto 1
 let x = 0;
 let y = 10;
 
-//-- Velocidad horizontal del objeto
+//-- Coordenadas del objeto 2
+let x1 = 0;
+let y1 = 450;
+
+
+//-- Velocidad horizontal del objeto 1
 let velx = 2;
 let vely = 1;
+//-- Velocidad horizontal del objeto 2
+let velx1 = 2;
+let vely1 = 0;
+
 //-- Funcion principal de animacion
 function update() 
 {
@@ -35,17 +44,21 @@ function update()
    if (y <= 0 || y > 490) {
     vely = -vely;
   }
+  if (x1 < 0 || x1 >= (canvas.width - 20) ) {
+    velx1 = -velx1;
+  }
+
   //-- se actualiza la posicion asi
   x = x + velx;
   y = y + vely;
-
+  x1 = x1 + velx1;
   //-- 2) Borrar el canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   //-- 3) Dibujar los elementos visibles
   ctx.beginPath();
     ctx.arc(x, y, 5, 0,2 * Math.PI);
-
+    ctx.rect(x1, y1, 20, 5);
     //-- Dibujar
     ctx.fillStyle = 'red';
 
