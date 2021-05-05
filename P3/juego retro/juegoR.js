@@ -36,7 +36,7 @@ function update()
   //-- Comprobar colisión con borde derecho
   //--lo que le estoy poniendo es que si alcanza la altura del canvas 0 x es menor que 0, que invierta la velocidad
   //-- 
-  if (x < 0 || x >= (canvas.width - 20) ) {
+  if (x < 0 || x >= (canvas.width - 10) ) {
     velx = -velx;
   }
   //para que rebote en la horizontal de arriba y abajo:
