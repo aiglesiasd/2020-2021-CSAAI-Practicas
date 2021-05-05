@@ -3,8 +3,8 @@ console.log("Ejecutando JS...");
 const canvas = document.getElementById("canvas");
 
 //-- Definir el tamaño del canvas(horizontal=600,vertical=200)
-canvas.width = 600;
-canvas.height = 300
+canvas.width = 370;
+canvas.height = 500;
 
 //-- Obtener el contexto del canvas
 const ctx = canvas.getContext("2d");
@@ -32,7 +32,7 @@ function update()
   }
   //para que rebote en la horizontal de arriba y abajo:
    //-- Condición de rebote en extremos horizontales del canvas
-   if (y <= 0 || y > 280) {
+   if (y <= 0 || y > 490) {
     vely = -vely;
   }
   //-- se actualiza la posicion asi
