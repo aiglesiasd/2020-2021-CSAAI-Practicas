@@ -2,7 +2,7 @@ console.log("Ejecutando JS...");
 
 const canvas = document.getElementById("canvas");
 
-//-- Definir el tamaño del canvas(horizontal=600,vertical=200)
+//-- Definir el tamaño del canvas(horizontal,vertical)
 canvas.width = 370;
 canvas.height = 500;
 
