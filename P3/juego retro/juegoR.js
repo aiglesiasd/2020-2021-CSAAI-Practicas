@@ -14,8 +14,8 @@ let x = 0;
 let y = 10;
 
 //-- Velocidad horizontal del objeto
-let velx = 4;
-let vely = 0.2;
+let velx = 2;
+let vely = 1;
 //-- Funcion principal de animacion
 function update() 
 {
@@ -44,7 +44,7 @@ function update()
 
   //-- 3) Dibujar los elementos visibles
   ctx.beginPath();
-    ctx.rect(x, y, 20, 20);
+    ctx.arc(x, y, 5, 0,2 * Math.PI);
 
     //-- Dibujar
     ctx.fillStyle = 'red';
