@@ -47,6 +47,9 @@ function update()
   if (x1 < 0 || x1 >= (canvas.width - 20) ) {
     velx1 = -velx1;
   }
+  if( y == y1){
+    vely= -vely
+  }
 
   //-- se actualiza la posicion asi
   x = x + velx;
