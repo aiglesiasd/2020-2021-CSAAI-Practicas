@@ -16,10 +16,10 @@ var y = canvas.height - 9; //puntoY en el que empieza
 //-- Velocidad del objeto 1
 var velx = 3;
 var vely = 2;
-    const chocaLadrillo = new Audio('chocaLadrillo.mp3');
+    const chocaLadrillo = new Audio('choca.mp3');
     const ganamos = new Audio('ganamos.mp3');
     const perdemos = new Audio('perdemos.mp3');
-    const chocaRaqueta = new Audio('chocaRaqueta.mp3');
+    const chocaRaqueta = new Audio('choca.mp3');
     const unaMenos = new Audio('unaMenos.mp3');
 //funcion para dibujar la pelota
 function DrawBall(){
