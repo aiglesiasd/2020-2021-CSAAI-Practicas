@@ -142,7 +142,7 @@ function bricksBall() {
           }
       }
   }
-}
+
 
 //-- Funcion principal de animacion
 function update() 
