@@ -21,6 +21,12 @@ var vely = 2;
     const perdemos = new Audio('perdemos.mp3');
     const chocaRaqueta = new Audio('choca.mp3');
     const unaMenos = new Audio('unaMenos.mp3');
+    window.onkeydown = (e) => {
+      if(e.keyCode == 32){
+        velx = 4;
+        vely = 5;
+      }
+    }
 //funcion para dibujar la pelota
 function DrawBall(){
   ctx.beginPath();
@@ -29,9 +35,10 @@ function DrawBall(){
   ctx.fill();
   ctx.closePath();
 }
+
 var vidas = 3;
 
-//Vidas 
+//Vidas que te van quedando
 function VidasQuedan(){
   ctx.font = "15px Times New Roman";
   ctx.fillText("Vidas: " + vidas , 7, 13);
