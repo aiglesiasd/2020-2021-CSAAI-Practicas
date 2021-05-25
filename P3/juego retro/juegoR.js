@@ -186,23 +186,20 @@ function update()
         R= (canvas.width - WRaqueta)/2;
         vidas -= 1;
         unaMenos.play();
+
       }else if(vidas == 0){
         velx = 0;
         vely = 0;
         raqueta = (canvas.width - WRaqueta)/2;
-        document.getElementById("try").style.display = "";
-        document.getElementById("game_over").style.display = "block";
-        document.getElementById("canvas").style.display = "none";
+        
         perdemos.play();
       }
       //cuando destruimos todos los bloques....
-      if(puntos == 70){
+      if(puntos == 40){
         velx = 0;
         vely = 0;
         R = (canvas.width - WRaqueta)/2;
-        document.getElementById("try").style.display = "";
-        document.getElementById("win").style.display = "block";
-        document.getElementById("canvas").style.display = "none";
+        
         ganamos.play();
       }
       //para que mi pala no se salga del canvas
