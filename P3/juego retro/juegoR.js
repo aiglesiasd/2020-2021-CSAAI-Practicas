@@ -2,8 +2,8 @@ console.log("Ejecutando JS...");
 
 const canvas = document.getElementById("canvas");
 //-- Definir el tamaño del canvas(horizontal,vertical)
-canvas.width = 1200;
-canvas.height = 600;
+canvas.width = 500;
+canvas.height = 500;
 
 //-- Obtener el contexto del canvas
 const ctx = canvas.getContext("2d");
@@ -128,20 +128,21 @@ function DrawBricks(){
   
 //funcion para detectar colisiones entre bola y ladrillos
 function bricksBall() {
-  for(i=0; i<BRICK.C; i++) {
-      for(r=0; r<BRICK.F; r++) {
-          var br = bricks[i][r].ESTADO;
-          if(br.status == 1) {
-              if(x+radioB > br.x && x+radioB < br.x+BRICK.W && y+radioB > br.y && y+radioB < br.y+BRICK.H) {
-                  vy = -vy; 
-                  br.status = 0;
-                  puntos += 1;
-                  chocaLadrillo.play();
+                  for (let i = 1; i < BRICK.F; i++) {//Inicializo en 1 porque igual lo hice en el bucle de arriba
+                    for (let j = 1; j < BRICK.C; j++) {
+                      if (bricks[i][j].ESTADO) {
+                        if ((y >= bricks[i][j].y) && (y <= (bricks[i][j].y + 20))){
+                          if ((x >= bricks[i][j].x) && (x <= (bricks[i][j].x + 70))){
+                            bricks[i][j].ESTADO = false;
+                            vely = -vely;
+                            puntos += 1;
+                            chocaLadrillo.play();
                   }
               }
           }
       }
   }
+}
 
 
 //-- Funcion principal de animacion
