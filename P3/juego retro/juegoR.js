@@ -16,10 +16,9 @@ var y = canvas.height - 9; //puntoY en el que empieza
 //-- Velocidad del objeto 1
 var velx = 3;
 var vely = 2;
-    const chocaLadrillo = new Audio('choca.mp3');
+    const choca = new Audio('choca.mp3');
     const ganamos = new Audio('ganamos.mp3');
     const perdemos = new Audio('perdemos.mp3');
-    const chocaRaqueta = new Audio('choca.mp3');
     const unaMenos = new Audio('unaMenos.mp3');
     window.onkeydown = (e) => {
       if(e.keyCode == 32){
@@ -143,7 +142,7 @@ function bricksBall() {
                             bricks[i][j].ESTADO = false;
                             vely = -vely;
                             puntos += 1;
-                            chocaLadrillo.play();
+                            choca.play();
                   }
               }
           }
@@ -174,7 +173,7 @@ function update()
           if(x > R && x <R + WRaqueta){
               vely = -vely;
           }
-          chocaRaqueta.play();
+          choca.play();
       }
 
       //cuando la pelota toca el suelo....
