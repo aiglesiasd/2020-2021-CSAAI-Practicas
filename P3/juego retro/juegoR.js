@@ -34,7 +34,7 @@ var vidas = 3;
 //Vidas 
 function VidasQuedan(){
   ctx.font = "15px Times New Roman";
-  ctx.fillText("Vidas quedan: " + vidas , 7, 13);
+  ctx.fillText("Vidas: " + vidas , 7, 13);
   ctx.fillStyle = 'white';
 }
 
@@ -43,7 +43,7 @@ var puntos = 0;
 //Puntos 
 function Points(){
   ctx.font = "15px Times New Roman"
-  ctx.fillText("Puntos: " +puntos, 910, 12);
+  ctx.fillText("Puntos: " +puntos, 410, 12);
   ctx.fillStyle = 'white';
   
 }
