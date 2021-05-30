@@ -4,6 +4,7 @@ console.log('Ejecutando JS...');
 const canvas = document.getElementById('canvas');
 var imagen = document.getElementById('imagen');
 const ctx = canvas.getContext('2d');
+const Selec1 = document.getElementById("Selec1");
 const Grises = document.getElementById("Grises");
 const Colores = document.getElementById("Colores");
 //-- Para los deslizadores
@@ -34,7 +35,7 @@ imagen.onload = function () {
   };
   
 // Para la foto que quiero modificar cuando haga click..(seleccionamos)
-Sel1.onclick = () => {
+Selec1.onclick = () => {
     imagen = document.getElementById('imagen');
     ctx.drawImage(imagen, 0, 0, canvas.width, canvas.height);
   }
