@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(243, 8, 8);
+  }
+  #directo{
+    background-color: rgba(238, 4, 4, 0.9);
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    
+  }
+  #video1{
+    background-color: rgba(238, 4, 4, 0.9);
+      border-style: solid;
+      border-color: black;
+      border-width: 1px;
+      width: 400px;
+  
+  }
+  #video2{
+    background-color: rgba(238, 4, 4, 0.9);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 400px;
+
+}

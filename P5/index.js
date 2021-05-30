@@ -10,8 +10,8 @@ const btn_src_off = document.getElementById("btn_src_off");
 
 
 //-- Establecer las dimensiones de los vídeos
-directo.width=500;
-directo.height=500;
+directo.width=400;
+directo.height=400;
 video1.width=200;  
 video1.height=200;
 video2.width=200;
