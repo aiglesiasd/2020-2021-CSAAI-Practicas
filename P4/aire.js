@@ -3,6 +3,9 @@ console.log('Ejecutando JS...');
 //-- Obtener elementos del DOM
 const canvas = document.getElementById('canvas');
 var imagen = document.getElementById('imagen');
+var img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+var img1 = document.createElement("img1");
+img1.data = img;
 const ctx = canvas.getContext('2d');
 const Selec1 = document.getElementById("Selec1");
 const Grises = document.getElementById("Grises");
