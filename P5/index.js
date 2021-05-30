@@ -17,7 +17,7 @@ video2.width=200;
 video2.height=100;
 
 //-- Imagen de Test usada
-const TEST_IMAGE_URL = "";
+const TEST_IMAGE_URL = "imagen.png";
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
