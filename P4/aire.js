@@ -73,6 +73,7 @@ Selec1.onclick = () => {
   }
         //-- Funcion de retrollamada del deslizador rojo
         deslizador_rojo.oninput = () => {
+            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
             var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
             var data = imgData.data;
             if (estado == "Colores"){
@@ -82,6 +83,7 @@ Selec1.onclick = () => {
         }
         //-- Funcion de retrollamada del deslizador verde
         deslizador_verde.oninput = () => {
+            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
             var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
             var data = imgData.data;
             if (estado == "Colores"){
@@ -91,6 +93,7 @@ Selec1.onclick = () => {
         }
         //-- Funcion de retrollamada del deslizador azul
         deslizador_azul.oninput = () => {
+            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
             var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
             var data = imgData.data;
             if (estado == "Colores"){
