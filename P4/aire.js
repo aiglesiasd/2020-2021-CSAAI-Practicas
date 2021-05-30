@@ -6,8 +6,9 @@ var imagen = document.getElementById('image');
 
 const ctx = canvas.getContext('2d');
 const Selec1 = document.getElementById("Selec1");
-const Grises = document.getElementById("Grises");
+const Gris = document.getElementById('Gris');
 const Colores = document.getElementById("Colores");
+
 //-- Para los deslizadores
 const deslizador_rojo = document.getElementById('deslizador_rojo');
 const deslizador_verde = document.getElementById('deslizador_verde');
@@ -98,3 +99,30 @@ Selec1.onclick = () => {
     ctx.putImageData(imgData, 0, 0);
     return imgData;
   }
+ 
+
+  function paraFiltroGrises(){
+    ctx.drawImage(imagen, 0,0 ,canvas.width, canvas.height);
+    let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let data = imgData.data;
+    
+    for (var i = 0; i < data.length; i+=4) {
+      r = data[i];
+      g = data[i+1];
+      b = data[i+2];
+      brillo = (3 * r + 4 * g + b)/8 
+      data[i] = brillo;
+      data[i+1] = brillo;
+      data[i+2] = brillo;
+    }
+    ctx.putImageData(imgData, 0, 0);
+  }
+
+  Gris.onclick = () => {
+    
+    paraFiltroGrises();
+   
+    
+  }
+  
+  

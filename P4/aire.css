@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(247, 245, 242);
+}
 #image{
   border-style: solid;
   border-color: black;
