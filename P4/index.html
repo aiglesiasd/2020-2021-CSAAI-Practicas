@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Ej-01.js" defer></script>
+    <title>Ejemplo 1</title>
+</head>
+<body>
+    <p>Imagen original</p>
+    <img src="logoURJC.png" id="imagesrc">
+    <p>Imagen manipulada</p>
+    <canvas id="canvas"></canvas>
+    <h1>Procesado de imagenes del Ejercito del Aire</h1>
+    <div class="imagenes">
+      <b id="imagen1">IMAGEN 1</b>
+      <br>
+      <img src="dino1.jpeg" id="imagen">
+      <br>
+      <h4 id="manipulada">Imagen Manipulada</h4>
+      <canvas id="canvas"></canvas>
+      <br>
+      <br>
+      <button id='foto1'>IMAGEN1</button>
+      <br>
+      <br>
+    </div>
+    <div id="BOTONES">
+      <button id="grises">GRISES</button>
+      <button id="colores">COLORES</button>
+    </div>
+      <br>
+    <div id="deslizadores">
+      <b >Rojo:</b>
+      <input type="range" id="rojo" min="0" max="255" value="255"/>
+      <b id="valueR">00</b>
+      <br>
+      <b>Verde:</b>
+      <input type="range" id="verde" min="0" max="255" value="255"/>
+      <b id="valueG">00</b>
+      <br>
+      <b>Azul:</b>
+      <input type="range" id="azul" min="0" max="255" value="255"/>
+      <b id="valueB">00</b>
+    </div>
+</body>
+</html
