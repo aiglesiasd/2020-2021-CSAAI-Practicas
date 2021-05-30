@@ -1,6 +1,13 @@
-#imagen{
+#image{
   border-style: solid;
   border-color: black;
-  border-width: 5px;
+  border-width: 1px;
   width: 400px;
+}
+#canvas{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 400px;
+
 }

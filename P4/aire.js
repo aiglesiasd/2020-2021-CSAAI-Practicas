@@ -2,10 +2,8 @@ console.log('Ejecutando JS...');
 
 //-- Obtener elementos del DOM
 const canvas = document.getElementById('canvas');
-var imagen = document.getElementById('imagen');
-var img = ctx.getImageData(0, 0, canvas.width, canvas.height);
-var img1 = document.createElement("img1");
-img1.data = img;
+var imagen = document.getElementById('image');
+
 const ctx = canvas.getContext('2d');
 const Selec1 = document.getElementById("Selec1");
 const Grises = document.getElementById("Grises");
@@ -18,7 +16,10 @@ const deslizador_azul = document.getElementById('deslizador_azul');
 const value_r = document.getElementById('value_r');
 const value_v= document.getElementById('value_v');
 const value_a = document.getElementById('value_a');
-var estado = "Colores";
+var estado = "colores";
+var img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+var img1 = document.createElement("imagen");
+img1.data = img;
 //-- Función de retrollamada de imagen cargada
 //-- La imagen no se carga instantaneamente, sino que
 //-- lleva un tiempo. Sólo podemos acceder a ella una vez
@@ -39,15 +40,37 @@ imagen.onload = function () {
   
 // Para la foto que quiero modificar cuando haga click..(seleccionamos)
 Selec1.onclick = () => {
-    imagen = document.getElementById('imagen');
+    imagen = document.getElementById('image');
     ctx.drawImage(imagen, 0, 0, canvas.width, canvas.height);
   }
   Colores.onclick = () => {
-    estado = "Colores";
+    estado = "colores";
     ctx.putImageData(paraFiltroColor(), 0, 0);
   
   }
 
+  
+        //-- Funcion de retrollamada del deslizador rojo
+        deslizador_rojo.oninput = () => {
+            if (estado == "colores"){
+            paraFiltroColor();
+        
+            }
+        }
+        //-- Funcion de retrollamada del deslizador verde
+        deslizador_verde.oninput = () => {
+            if (estado == "colores"){
+            paraFiltroColor();
+        
+            }
+        }
+        //-- Funcion de retrollamada del deslizador azul
+        deslizador_azul.oninput = () => {
+            if (estado == "colores"){
+            paraFiltroColor();
+        
+            }
+        }
   
   function paraFiltroColor() {
     //-- Mostrar el nuevo valor del deslizador
@@ -64,7 +87,7 @@ Selec1.onclick = () => {
     verde = deslizador_verde.value;
     azul = deslizador_azul.value;
     //-- Filtrar la imagen según el nuevo umbral
-    for (var i = 0; i < data.length; i+=4) {
+    for (let i = 0; i < data.length; i+=4) {
       if (data[i] > rojo)
         data[i] = rojo;
       if (data[i+1] > verde)
@@ -72,29 +95,6 @@ Selec1.onclick = () => {
       if (data[i+2] > azul)
         data[i+2] = azul;
     }
-    //-- Poner la imagen modificada en el canvas
     ctx.putImageData(imgData, 0, 0);
     return imgData;
   }
-        //-- Funcion de retrollamada del deslizador rojo
-        deslizador_rojo.oninput = () => {
-            if (estado == "Colores"){
-            paraFiltroColor();
-        
-            }
-        }
-        //-- Funcion de retrollamada del deslizador verde
-        deslizador_verde.oninput = () => {
-            if (estado == "Colores"){
-            paraFiltroColor();
-        
-            }
-        }
-        //-- Funcion de retrollamada del deslizador azul
-        deslizador_azul.oninput = () => {
-            if (estado == "Colores"){
-            paraFiltroColor();
-        
-            }
-        }
-  
