@@ -52,7 +52,9 @@ Selec1.onclick = () => {
     value_v.innerHTML = deslizador_verde.value;
     value_a.innerHTML = deslizador_azul.value;
 
-    
+    ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
+    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    var data = imgData.data;
   
     
     rojo = deslizador_rojo.value;
@@ -73,9 +75,6 @@ Selec1.onclick = () => {
   }
         //-- Funcion de retrollamada del deslizador rojo
         deslizador_rojo.oninput = () => {
-            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
-            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            var data = imgData.data;
             if (estado == "Colores"){
             paraFiltroColor();
         
@@ -83,9 +82,6 @@ Selec1.onclick = () => {
         }
         //-- Funcion de retrollamada del deslizador verde
         deslizador_verde.oninput = () => {
-            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
-            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            var data = imgData.data;
             if (estado == "Colores"){
             paraFiltroColor();
         
@@ -93,9 +89,6 @@ Selec1.onclick = () => {
         }
         //-- Funcion de retrollamada del deslizador azul
         deslizador_azul.oninput = () => {
-            ctx.drawImage(imagen, 0,0, canvas.width, canvas.height)
-            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            var data = imgData.data;
             if (estado == "Colores"){
             paraFiltroColor();
         
