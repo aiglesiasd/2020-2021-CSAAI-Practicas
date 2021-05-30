@@ -1,5 +1,6 @@
 #imagen{
   border-style: solid;
   border-color: black;
-  border-width: 7px;
+  border-width: 5px;
+  width: 400px;
 }
