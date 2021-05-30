@@ -15,7 +15,7 @@ const deslizador_azul = document.getElementById('deslizador_azul');
 const value_r = document.getElementById('value_r');
 const value_v= document.getElementById('value_v');
 const value_a = document.getElementById('value_a');
-
+var estado = "Colores";
 //-- Función de retrollamada de imagen cargada
 //-- La imagen no se carga instantaneamente, sino que
 //-- lleva un tiempo. Sólo podemos acceder a ella una vez
@@ -44,6 +44,7 @@ Selec1.onclick = () => {
     ctx.putImageData(paraFiltroColor(), 0, 0);
   
   }
+
   
   function paraFiltroColor() {
     //-- Mostrar el nuevo valor del deslizador
@@ -51,8 +52,7 @@ Selec1.onclick = () => {
     value_v.innerHTML = deslizador_verde.value;
     value_a.innerHTML = deslizador_azul.value;
 
-    let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    let data = imgData.data;
+    
   
     
     rojo = deslizador_rojo.value;
@@ -71,4 +71,31 @@ Selec1.onclick = () => {
     ctx.putImageData(imgData, 0, 0);
     return imgData;
   }
-    
+        //-- Funcion de retrollamada del deslizador rojo
+        deslizador_rojo.oninput = () => {
+            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            var data = imgData.data;
+            if (estado == "Colores"){
+            paraFiltroColor();
+        
+            }
+        }
+        //-- Funcion de retrollamada del deslizador verde
+        deslizador_verde.oninput = () => {
+            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            var data = imgData.data;
+            if (estado == "Colores"){
+            paraFiltroColor();
+        
+            }
+        }
+        //-- Funcion de retrollamada del deslizador azul
+        deslizador_azul.oninput = () => {
+            var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            var data = imgData.data;
+            if (estado == "Colores"){
+            paraFiltroColor();
+        
+            }
+        }
+  
